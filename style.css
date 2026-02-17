@@ -176,8 +176,26 @@ body {
   }
 }
 
-.side-card {
-    width: 240px;
-    flex-shrink: 0;   /* 🔥 이거 추가 */
+
+/* ===== 레이아웃 수정 ===== */
+
+
+
+.content {
+  flex: 1;
 }
 
+.main-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.side-card {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.main-container > .section-card:not(.side-card) {
+  flex: 1;
+}
