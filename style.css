@@ -44,6 +44,7 @@ body {
     gap: 30px;
   width: 100%;
   max-width: 760px;
+  align-item: flex-start;  /* 🔥 이 줄 추가 */
 }
 
 /* 카드 공통 스타일 */
