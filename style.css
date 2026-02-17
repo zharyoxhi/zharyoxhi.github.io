@@ -58,6 +58,11 @@ body {
   border: 1px solid #e5e7eb;
 }
 
+/* 🔥 왼쪽 카드 폭 조정 */
+.container > .section-card:first-child {
+    width: 240px;
+}
+
 /* 프로필 카드 레이아웃 */
 .profile-card {
   display: grid;
@@ -171,3 +176,7 @@ body {
   }
 }
 
+/* 왼쪽 카드 전용 */
+.side-card {
+    width: 240px;
+}
