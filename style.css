@@ -39,6 +39,9 @@ body {
 
 /* 메인 컨테이너 (노션처럼 폭 좁게) */
 .container {
+    display: flex;
+    justify-content: center;  /* 가로 가운데 */
+    gap: 30px;
   width: 100%;
   max-width: 760px;
 }
