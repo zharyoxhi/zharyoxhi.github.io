@@ -40,7 +40,8 @@ body {
 /* 메인 컨테이너 (노션처럼 폭 좁게) */
 .container {
   width: 100%;
-  max-width: 760px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* 카드 공통 스타일 */
