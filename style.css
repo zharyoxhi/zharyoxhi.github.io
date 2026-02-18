@@ -15,8 +15,8 @@ body {
 /* 페이지 가운데 정렬 (노션 느낌) */
 .page {
   min-height: 100vh;
-  display: block;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 32px 16px;
 }
@@ -39,12 +39,8 @@ body {
 
 /* 메인 컨테이너 (노션처럼 폭 좁게) */
 .container {
-    display: flex;
-    justify-content: center;  /* 가로 가운데 */
-    gap: 30px;
   width: 100%;
   max-width: 760px;
-  align-items: flex-start;  /* 🔥 이 줄 추가 */
 }
 
 /* 카드 공통 스타일 */
@@ -56,11 +52,6 @@ body {
   margin-bottom: 16px;
   box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
   border: 1px solid #e5e7eb;
-}
-
-/* 🔥 왼쪽 카드 폭 조정 */
-.container > .section-card:first-child {
-    width: 240px;
 }
 
 /* 프로필 카드 레이아웃 */
@@ -85,6 +76,7 @@ body {
   font-weight: 600;
   box-shadow: 0 10px 25px rgba(79, 70, 229, 0.35);
 }
+
 .profile-right h2 {
   font-size: 22px;
   margin-bottom: 4px;
@@ -174,28 +166,4 @@ body {
   .section-card {
     padding: 20px 16px 18px;
   }
-}
-
-
-/* ===== 레이아웃 수정 ===== */
-
-
-
-.content {
-  flex: 1;
-}
-
-.main-container {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
-}
-
-.side-card {
-  width: 250px;
-  flex-shrink: 0;
-}
-
-.main-container > .section-card:not(.side-card) {
-  flex: 1;
 }
