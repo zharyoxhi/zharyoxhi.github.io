@@ -15,8 +15,8 @@ body {
 /* 페이지 가운데 정렬 (노션 느낌) */
 .page {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  flex-direction: row;
   align-items: center;
   padding: 32px 16px;
 }
